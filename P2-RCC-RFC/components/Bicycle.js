@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Image, Text, View } from 'react-native'
 
 function Bicycle() {
     const city = "Bogor";
@@ -13,7 +13,16 @@ function Bicycle() {
     <Text>---------------</Text>
     <TakeRide/>
     {PlaceGo(city)};
+<View>
+    <Text>Gambar Random</Text>
+    <Image
+    source={require("../assets/pxfuel.jpg")}
+    style={{ width: 200, height: 200}}
+    />
+</View>
+
    </View>
+   
   )
 }
 
